@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+
+.pre {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    border: 0.5px solid #c2c2c2;
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+span .admin {
+    font-weight: 600;
+    color: #42A8C0;
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+input {
+    box-sizing: content-box;
+    max-width: 300px;
+    width: 100%;
+    min-height: 35px;
+    border: 1px dotted #42A8C0;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+textarea {
+    box-sizing: content-box;
+    max-width: 300px;
+    width: 100%;
+    min-height: 50px;
+    resize: none;
+    border: 1px dotted #42A8C0;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    font-size: 18px;
+    color: white;
+    max-width: 250px;
+    background-color: #42A8C0;
+    border: 0;
+    border-radius: 25px;
+    transition: 0.2s;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #2d7788;
+    transition: 0.2s;
+}
+
+.comments-section {
+    max-width: 300px;
+    width: 100%;
+    border-top: 3px solid #42A8C0;
+    padding: 5px 0;
+}
+
+.comments-section .warning {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 20px;
+
+}
+
+.comment-section {
+    display: flex;
+}
+
+.comment-section .name {
+    font-weight: 600;
+    word-break: break-all;
+    color: #42A8C0;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.comment-section .date {
+    font-size: 11px;
+    font-weight: 300;
+    min-width: 65px;
+    opacity: 0.2;
+    margin-left: auto;
+}

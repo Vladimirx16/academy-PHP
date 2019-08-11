@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-region {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2d7788;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-region img {
+    height: 100%;
+    width: 400px;
+}
+
+.kgb-region {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    height: 306px;
+}
+
+.kgb-region .eye {
+    position: absolute;
+    display: none;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.kgb-region .eye.-first {
+    left: 68px;
+    top: 98px;
+}
+
+.kgb-region .eye.-second {
+    left: 110px;
+    top: 98px;
+}
+
+.kgb-region .eye.-third {
+    right: 99px;
+    top: 158px;
+    margin-right: -6px;
+}
+
+.kgb-region .eye.-fourth {
+    right: 57px;
+    top: 158px;
+    margin-right: -4px;
+}
+
+.registration-form,
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form input,
+.login-form input {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    max-width: 300px;
+    width: 100%;
+    min-height: 35px;
+    border: 1px solid #42A8C0;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.registration-form input:focus,
+.login-form input:focus {
+    outline: none;
+}
+
+.button.-redirect,
+.button,
+.registration-form button,
+.login-form button {
+    font-size: 24px;
+    color: white;
+    background-color: #42A8C0;
+    border: 0;
+    border-radius: 25px;
+    transition: 0.2s;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.button.-delete {
+    background: #d92d2b;
+}
+
+.button.-delete:hover {
+    background: #9a201e;
+}
+
+.button.-delete:disabled {
+    opacity: 0.5;
+}
+
+.button.-delete:disabled:hover {
+    background: #d92d2b;
+}
+
+.registration-form button {
+    font-size: 14px;
+}
+
+.button.-redirect,
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px 5px;
+}
+
+.button.-redirect:hover,
+.button:hover,
+.registration-form button:hover,
+.login-form button:hover {
+    background-color: #2d7788;
+    transition: 0.2s;
+}
+
+.button.-redirect:focus,
+.button:focus,
+.registration-form button:focus,
+.login-form button:focus {
+    outline: none;
+}
+
+.login-form .registration,
+.link{
+    color: grey;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.login-form .registration:hover,
+.link:hover {
+    text-decoration: underline;
+}
+
+.agreement {
+    position: relative;
+    font-weight: 600;
+    color: #d92d2b;
+    cursor: pointer;
+    margin-right: -25px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.agreement::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 2px solid #d92d2b;;
+    margin-left: -30px;
+    top: -5%;
+}
+
+input[type=checkbox]:checked + .agreement::before {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 18px;
+    font-weight: 600;
+    color: #d92d2b;
+    text-align: center;
+    line-height: 15px;
+
+}
